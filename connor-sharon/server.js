@@ -25,18 +25,18 @@ app.post('/articles', (request, response) => {
 // COMMENT: Why are our files in a "public" directory now? How does ExpressJS serve files? 
 // they are in a public file so that web browsers can view them but not view our private files not in the public directory. Express looks at the files in order and sets them in the order they are listed. 
 
-// TODO: Write a new route, using an arrow function, that will handle a request and send the new.html file back to the user.
+// DONE: Write a new route, using an arrow function, that will handle a request and send the new.html file back to the user.
 // NOTE: route url does not need to match the file name
 app.get('/new', (req, res) => {
   res.sendFile('new.html', {root: './public'});
 });
 
-// TODO: Write a new route, using an arrow function, that will handle any other routes that were not defined and deliver a 404 status message to the user. See the ExpressJS docs for a hint.
+// DONE: Write a new route, using an arrow function, that will handle any other routes that were not defined and deliver a 404 status message to the user. See the ExpressJS docs for a hint.
 app.get('*', (req, res)=> {
   console.log('serving 404 message')
   res.status(404).write('Page not found!');
   res.end();
 });
 
-// TODO: Log to the console a message that lets you know which port your server has started on
+// DONE: Log to the console a message that lets you know which port your server has started on
 app.listen(PORT, () => console.log(`Server running and listening on ${PORT}`));
