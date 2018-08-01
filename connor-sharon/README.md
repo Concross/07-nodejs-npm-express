@@ -10,7 +10,11 @@ We are building a blog that can add articles that can be filtered by author and 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
-The user needs to scaffold out the HTML with a nav and template articles. Then the user needs to setup some basic CSS for the nav, footer and template article.  Then the user needs to setup and article Constructor Object from database.  Then the user needs to add filters for author name and category and populate them.  Then the user needs to hide and show articles according to filter.  Then the user needs to create nav functionality that shows/hides parts of the page. The user will also need to have a JSON file with article data and and understanding of AJAX requests.
+1. Fork and clone the repo
+2. Initialize npm in root folder
+  'npm init'
+  'npm install express --save'
+3. Run 'node server.js'
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you’re using, and any other relevant design information. -->
