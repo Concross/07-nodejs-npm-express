@@ -1,15 +1,19 @@
 'use strict';
 
-// TODO: Require the ExpressJS package that you installed via NPM, and instantiate the app.
+// DONE: Require the ExpressJS package that you installed via NPM, and instantiate the app.
 // Remember to install ExpressJS, and be sure that it's been added to your package.json as a dependency.
+
+const express = require('express');
+
+const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-// TODO: Initialize your project using NPM to create and populate  package.json and package-lock.json files. Don't forget to add node_modules to your .gitignore!
+// DONE: Initialize your project using NPM to create and populate  package.json and package-lock.json files. Don't forget to add node_modules to your .gitignore!
 
 // TODO: Include all of the static resources as an argument to app.use()
 app.use(express.urlencoded({ extended: true }));
-
+app.use(express.static('./public'));
 // REVIEW: POST route needs to parse the body passed in with the request.
 // POST middleware
 app.post('/articles', (request, response) => {
@@ -27,3 +31,4 @@ app.post('/articles', (request, response) => {
 // TODO: Write a new route, using an arrow function, that will handle any other routes that were not defined and deliver a 404 status message to the user. See the ExpressJS docs for a hint.
 
 // TODO: Log to the console a message that lets you know which port your server has started on
+app.listen(PORT, () => console.log(`Server running and listening on ${PORT}`));
