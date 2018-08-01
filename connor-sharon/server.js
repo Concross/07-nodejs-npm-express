@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 // DONE: Initialize your project using NPM to create and populate  package.json and package-lock.json files. Don't forget to add node_modules to your .gitignore!
 
-// TODO: Include all of the static resources as an argument to app.use()
+// DONE: Include all of the static resources as an argument to app.use()
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
 // REVIEW: POST route needs to parse the body passed in with the request.
