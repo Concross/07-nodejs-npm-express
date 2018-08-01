@@ -25,10 +25,11 @@ Strategies: AJAX, SMACSS
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here’s an examples: -->
 
-07-26-18 8:00am - Initial commit with copied folder from starter
-07-26-18 8:30am - Completed review of existing code base
-07-26-18 10:00am - Added functionality to Article.fetchAll() to fetch articles from JSON file and render them to index.html
-07-26-18 12:30am - Added new ajax request to update index.html with changes to JSON file containing our article data
+08-01-18 8:00am - Initial commit with copied folder from starter
+08-01-18 8:15am - Updated dependencies and completed review of existing code base
+08-01-18 8:25am - Got server up and running on port 3000
+08-01-18 8:50am - Completed TODO's and served new page and 404 error
+08-01-18 9:20am - Completed comments and readme
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. --> Connor Crossley and Tim Leavey
+<!-- Give credit (and a link) to other people or resources that helped you build this application. --> Connor Crossley and Sharon Miller
