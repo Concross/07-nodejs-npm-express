@@ -1,0 +1,15 @@
+{
+  "name": "connor-sharon",
+  "version": "1.0.0",
+  "description": "Lab 07 in node.js, npm, and express.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Connor and Sharon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
